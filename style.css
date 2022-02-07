@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Roboto+Mono:wght@200;300;400&display=swap');
+
+html body {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'nunito', sans-serif;
+}
+
+/* NAVBAR START */
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 30px;
+    background-color: silver;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none; 
+    color: white; 
+}
+
+.navbar ul li a:hover {
+    color: rgb(63, 191, 233);
+    text-decoration: overline;
+    transition: all ease-in-out 300ms;
+}
+
+.navbar li {
+    padding: 20px;
+    margin-right: 10px;
+}
+.navbar #name {
+    margin-right: auto;
+    font-size: 20px;
+    font-family: 'Roboto Mono', sans-serif;
+    color: rgba(0, 0, 0, 0.824);
+}
+/* NAVBAR END */
+
+/* WELCOME START */
+.welcome {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.577);
+}
+.welcome img{
+    float: right;
+    width: 600px;
+    height: auto;
+    margin-top: 75px;
+    margin-right: 80px;
+    border-radius: 50px;
+   
+}
+
+.welcome h1 {
+    margin: 0;
+    padding: 175px 0 0 100px;
+    font-size: 40px;
+    color: white;
+}
+
+.welcome p {
+    margin: 0;
+    padding: 20px 0 0 150px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.721);
+}
+/* WELCOME END */
+
+/* EXPERIENCE START */
+#experience {
+    background-color: silver;
+}
+
+#experience h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 0;
+    padding-top: 20px;
+    color: rgba(0, 0, 0, 0.721)
+}
+
+
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 20px 0 20px;
+    padding-bottom: 30px;
+    
+}
+
+.tree , .teach {
+    display: block;
+    border: 2px solid white;
+    border-radius: 15px;
+    width: 600px;
+    height: 300px;
+    text-align: center;
+    padding: 10px;
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.577);
+}
+
+.tree ul, .teach ul {
+    text-align: left;
+    line-height: 30px;
+}
+
+.tree p, .teach p {
+    text-align: left;
+}
+/* EXPERIENCE END */
+
+
+/* PROJECTS START */
+.projects {
+    background-color: rgba(0, 0, 0, 0.577);
+}
+
+.projects h2 {
+    text-align: center;
+    margin-top: 0;
+    padding: 40px 0 0 30px;
+    color: rgba(0, 0, 0, 0.721);
+    font-size: 40px;
+}
+
+.projects p {
+    text-align: center; 
+    padding: 40px 10px 40px 10px;
+    margin: 0 20% 40px 20%; 
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: silver;
+}
+
+.project-boxes img {
+    width: 325px;
+    height: 220px;
+    border: 2px solid white; 
+    border-radius: 10px;
+}
+
+.project-boxes {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.project-boxes a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white; 
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.584);
+    padding: 5px;
+    margin-bottom: 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+.project-boxes a:hover {
+    color: rgb(63, 191, 233);
+    transition: all ease-in-out 300ms;
+    border: 2px solid rgb(63, 191, 233);
+}
+/* PROJECTS END */
+
+/* ABOUT START */
+#skills h3 {
+    margin: 0px;
+}
+
+#skills #title {
+    text-align: right;
+    padding: 100px 200px 0 0;
+    font-size: 40px;
+    letter-spacing: 8px;
+    word-spacing: 10px;
+    color: rgba(0, 0, 0, 0.783);
+}
+#skills {
+    background-image: url(./jumping.jpeg);
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 900px;
+    background-color: silver;
+}
+
+.about-me {
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 20px;
+    margin-top: 300px;
+    color: white;
+    font-size: 20px;
+}
+
+.top, .center, .right {
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgba(33, 33, 33, 0.591);
+}
+
+.about-me h3 {
+    text-align: center;
+    padding: 10px;
+    letter-spacing: 5px;
+}
+
+.about-me ul {
+    line-height: 30px;
+    list-style-type: circle;
+}
+/* ABOUT END */
+
+/* CONTACT START */
+#contact {
+    background-color: rgba(33, 33, 33, 0.591);
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#contact h4 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+    padding: 20px;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+
+#contact img {
+    width: 50px;
+    height: 50px;
+}
+
+#contact a {
+    font-size: 16px;
+    text-decoration: none;
+    color: white; 
+}
+
+#contact a:hover {
+    color: rgb(63, 191, 233);
+    text-decoration: overline;
+    transition: all ease-in-out 300ms; 
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 25px;
+}
+
+.digits {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: silver;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.872);
+}
+
+/* CONTACT END */
