@@ -1,3 +1,66 @@
+@media (max-width: 900px) {
+    .navbar {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 900px) {
+    .welcome img {
+        width: 60vw;
+    }
+}
+
+@media (max-width: 1100px) {
+    .work, .tree, .teach {
+        display: flex;
+        flex-direction: column;
+        width: 93vw;
+        height: auto; 
+    }
+}
+
+@media (max-width: 1000px) {
+  .top, .center, .right {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+        width: 90vw; 
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .about-me ul {
+        list-style: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        width: 50px;
+        text-align: right;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 800px) {
+    .digits {
+        display: flex; 
+        flex-direction: column;
+    }
+}
+
+/* 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito&family=Roboto+Mono:wght@200;300;400&display=swap');
 
 html body {
@@ -26,7 +89,6 @@ html body {
 .navbar ul li a {
     text-decoration: none; 
     color: white; 
-    font-size: 1.5vw;
 }
 
 .navbar ul li a:hover {
@@ -41,7 +103,7 @@ html body {
 }
 .navbar #name {
     margin-right: auto;
-    font-size: 1.5vw;
+    font-size: 20px;
     font-family: 'Roboto Mono', sans-serif;
     color: rgba(0, 0, 0, 0.824);
 }
@@ -50,34 +112,30 @@ html body {
 /* WELCOME START */
 .welcome {
     width: 100%;
-    min-height: 80vh;
-    max-height: 500px;
+    height: 500px;
     background-color: rgba(0, 0, 0, 0.577);
-
-    display: grid;
-    grid-template-areas: 'header foto';
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    align-items: center;
 }
 .welcome img{
-    grid-area: foto;
-    width: 50vw;
+    float: right;
+    width: 600px;
     height: auto;
+    margin-top: 75px;
+    margin-right: 80px;
     border-radius: 50px;
-    padding: 2rem;
-}
-
-.text {
-    grid-area: header;
+   
 }
 
 .welcome h1 {
+    margin: 0;
+    padding: 175px 0 0 100px;
+    font-size: 40px;
     color: white;
-    margin-top: 0;
 }
 
 .welcome p {
+    margin: 0;
+    padding: 20px 0 0 150px;
+    font-size: 20px;
     color: rgba(0, 0, 0, 0.721);
 }
 /* WELCOME END */
@@ -97,33 +155,25 @@ html body {
 
 
 .work {
-    display: grid;
-    justify-items: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 'tree teach';
     gap: 30px;
-    margin: 0;
-    padding-bottom: 30px; 
+    margin: 0 20px 0 20px;
+    padding-bottom: 30px;
+    
 }
 
-.tree, .teach {
+.tree , .teach {
+    display: block;
     border: 2px solid white;
     border-radius: 15px;
-    min-height: 50vh;
+    width: 600px;
+    height: 300px;
     text-align: center;
-    margin: 0 1rem;
-    padding: 1rem;
+    padding: 10px;
     color: white; 
     background-color: rgba(0, 0, 0, 0.577);
-}
-
-.tree {
-    grid-area: tree;
-}
-
-.teach {
-    grid-area: teach;
 }
 
 .tree ul, .teach ul {
@@ -300,40 +350,6 @@ html body {
 /* CONTACT END */
 
 @media screen and (max-width: 768px) {
-
-    /* WELCOME */
-    .welcome {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-    }
-
-    .welcome img {
-        width: 80vw;
-        height: auto;
-    }
-
-    /* NAVBAR */
-    #name {
-        display: none;
-    }
-
-    .navbar ul {
-        justify-content: center;
-    }
-
-    .navbar ul li a {
-        font-size: 2.5vw;
-    }
-
-    /* WORK */
-    .work {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-}   
+    
+}
+*/
