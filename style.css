@@ -202,37 +202,51 @@ html body {
 }
 
 #skills #title {
-    text-align: right;
-    padding: 100px 200px 0 0;
     font-size: 40px;
+    padding: 2rem;
+    text-align: center;
     letter-spacing: 8px;
     word-spacing: 10px;
     color: rgba(0, 0, 0, 0.783);
 }
+
+#skills #jumping {
+    width: 50vw; 
+    height: auto;
+    border-radius: 1rem;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    overflow: hidden;
+}
+
 #skills {
-    background-image: url(./jumping.jpeg);
-    background-size: 1000px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    height: 900px;
+    min-height: 100vh;
     background-color: silver;
 }
 
 .about-me {
-    display: flex; 
-    justify-content: space-evenly;
-    padding: 20px;
-    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+    /* margin: 5rem auto;  */
     color: white;
-    font-size: 20px;
+    font-size: 1rem;
+    z-index: 2;
 }
 
 .top, .center, .right {
-    width: 300px;
-    height: 300px;
+    width: 25vw;
+    height: 50vh;
     border: 2px solid white;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: rgba(33, 33, 33, 0.591);
+    padding: 1rem;
+    z-index: 2;
 }
 
 .about-me h3 {
@@ -278,7 +292,7 @@ html body {
 #contact a:hover {
     color: rgb(63, 191, 233);
     text-decoration: overline;
-    transition: all ease-in-out 300ms; 
+    transition: all ease-in-out 300ms;
 }
 
 .footer {
@@ -336,4 +350,40 @@ html body {
         align-items: center;
     }
 
+    /* let's work together */
+
+    #contact h4 {
+        font-size: 5vw
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .digits {
+        flex-direction: column;
+    }
+
 }   
+
+/* about me section specific media q */
+
+@media screen and (max-width: 800px) {
+    
+    .about-me {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .top, .center, .right {
+        width: 60vw; 
+        height: auto;
+    }
+
+    #skills #jumping {
+        display: none;
+    }
+}
